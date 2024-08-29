@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>agency</title>
+  </head>
+  <body>
+    <header class="sticky top-0 left-0 w-full bg-[#00072d] relative z-50">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div>
+            <a class="w-max text-3xl font-bold text-white" href="/">Agency</a>
+          </div>
+          <div class="">
+            <img
+              onclick="addMenu()"
+              class="mobile-menu p-1 border border-white rounded md:hidden"
+              src="/images/burger_menu.svg"
+              alt=""
+            />
+            <div
+              class="show_menu hidden md:flex bg-[#00072D] md:bg-transparent md:static w-full md:w-full min-h-[100vh] md:min-h-max text-slate-900"
+            >
+              <img
+                onclick="removeMenu()"
+                class="p-1 border rounded-full mt-6 mr-6 ml-auto md:hidden"
+                src="/images/close.svg"
+                alt=""
+              />
+              <div class="text-center mt-6 md:mt-0">
+                <ul class="flex gap-4 flex-col md:flex-row">
+                  <li>
+                    <a
+                      class="cursor-pointer text-white hover:text-[#DBCB2A]"
+                      href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="cursor-pointer text-white hover:text-[#DBCB2A]"
+                      href="/"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="cursor-pointer text-white hover:text-[#DBCB2A]"
+                      href="/"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="cursor-pointer text-white hover:text-[#DBCB2A]"
+                      href="/"
+                      >Faq</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="cursor-pointer text-white hover:text-[#DBCB2A]"
+                      href="/"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <p class="text-white">Hello</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hero section starts -->
+    <div class="bg-[#2E2544]">
+      <div
+        class="text-white px-4 xl:px-0 md:flex xl:items-center justify-between gap-4"
+      >
+        <div class="w-full xl:w-[40%] xl:mx-[175px]">
+          <p class="text-4xl lg:text-7xl font-semibold md:font-bold pt-12">
+            Navigating Your Brand to New Heights.
+          </p>
+          <p class="text-sm md:text-base py-4 lg:py-12">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+            dolore officiis quisquam reprehenderit atque, eos quasi esse ex
+            vitae recusandae doloribus molestiae expedita iusto maiores,
+            repudiandae quis error, explicabo itaque!
+          </p>
+          <button
+            class="px-4 py-3 mb-4 rounded bg-[#DBCB2A] border-[#DBCB2A] border-2 text-slate-900 font-semibold hover:text-white hover:border-2 hover:border-[#DBCB2A] hover:bg-[#2E2544] transition delay-150 ease-in-out"
+          >
+            Get an Service
+          </button>
+        </div>
+        <div class="w-full xl:w-[60%]">
+          <img class="w-full" src="/images/Home_banner.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- hero section ends -->
+    <!-- services starts -->
+    <div class="py-12 lg:py-16 px-4 lg:ml-[175px]">
+      <p class="text-slate-900 para-heading flex items-center gap-2 mb-4">
+        Our Passion
+      </p>
+      <p class="text-4xl md:text-5xl lg:text-6xl font-medium">
+        Where can we <br />
+        lend a hand?
+      </p>
+      <div class="flex items-start justify-between gap-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-6 md:w-[90%] lg:w-[70%]"
+        >
+          <div class="p-4 lg:p-6 border border-slate-200">
+            <div class="max-h-[250px] overflow-hidden">
+              <img class="max-w-full" src="/images/service_c.jpg" alt="" />
+            </div>
+            <p class="text-2xl font-medium pt-6 pb-2">Marketing strategy</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              quis recusandae est mollitia fuga libero aut, molestiae repellat
+              nihil ipsa.
+            </p>
+          </div>
+          <div class="p-4 lg:p-6 border border-slate-200">
+            <div class="max-h-[250px] overflow-hidden">
+              <img class="max-w-full" src="/images/service_b.jpg" alt="" />
+            </div>
+            <p class="text-2xl font-medium pt-6 pb-2">Marketing strategy</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              quis recusandae est mollitia fuga libero aut, molestiae repellat
+              nihil ipsa.
+            </p>
+          </div>
+          <div class="p-4 lg:p-6 border border-slate-200">
+            <div class="max-h-[250px] overflow-hidden">
+              <img class="max-w-full" src="/images/service_a.jpg" alt="" />
+            </div>
+            <p class="text-2xl font-medium pt-6 pb-2">Marketing strategy</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              quis recusandae est mollitia consectetur adipisicing elit. Minus
+              quis recusandae est mollitia fuga libero aut, molestiae repellat
+              nihil ipsa.
+            </p>
+          </div>
+          <div class="p-4 lg:p-6 border border-slate-200">
+            <div class="max-h-[250px] overflow-hidden">
+              <img class="max-w-full" src="/images/service_A.jpg" alt="" />
+            </div>
+            <p class="text-2xl font-medium pt-6 pb-2">Marketing strategy</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              quis recusandae est mollitia fuga libero aut, molestiae repellat
+              nihil ipsa.
+            </p>
+          </div>
+          <div class="p-4 lg:p-6 border border-slate-200">
+            <div class="max-h-[250px] overflow-hidden">
+              <img class="max-w-full" src="/images/service_c.jpg" alt="" />
+            </div>
+            <p class="text-2xl font-medium pt-6 pb-2">Marketing strategy</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              quis recusandae est mollitia fuga libero aut, molestiae repellat
+              nihil ipsa.
+            </p>
+          </div>
+          <div class="p-4 lg:p-6 border border-slate-200">
+            <div class="max-h-[250px] overflow-hidden">
+              <img class="max-w-full" src="/images/service_B.jpg" alt="" />
+            </div>
+            <p class="text-2xl font-medium pt-6 pb-2">Marketing strategy</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              quis recusandae est mollitia fuga libero aut, molestiae repellat
+              nihil ipsa.
+            </p>
+          </div>
+        </div>
+        <div class="w-0 md:w-[10%] lg:w-[30%] hidden md:flex">
+          <img
+            class="w-1/3 h-full lg:max-h-[100vh] flex items-center mx-auto"
+            src="/images/tag_line.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- services ends -->
+    <!-- achievement starts -->
+    <div class="bg-[#00072d] text-white py-12 px-4 xl:px-0 xl:pl-[175px]">
+      <p class="para-heading-2 flex items-center gap-2">About us</p>
+      <p class="text-4xl md:text-5xl lg:text-6xl font-medium py-6">
+        We thrive on <br />
+        making our <br />
+        customers happy
+      </p>
+      <div class="flex flex-col lg:flex-row lg:gap-8">
+        <div class="lg:flex-1 grid grid-cols-1 md:grid-cols-2">
+          <div
+            class="flex flex-col items-center justify-center py-6 px-4 border-b border-[#2E2544] broder-b-2"
+          >
+            <p class="max-w-max text-6xl font-semibold pt-6 relative">
+              120 <span class="absolute top-0 text-[#DBCB2A]">+</span>
+            </p>
+            <p>Business advice given over 20 years</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center py-6 px-4 border-b border-[#2E2544] broder-b-2 md:border-l"
+          >
+            <p class="max-w-max text-6xl font-semibold pt-6 relative">
+              120 <span class="absolute top-0 text-[#DBCB2A]">+</span>
+            </p>
+            <p>Business advice given over 20 years</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center py-6 px-4 border-b border-[#2E2544] broder-b-2 md:border-b-0"
+          >
+            <p class="max-w-max text-6xl font-semibold pt-6 relative">
+              120 <span class="absolute top-0 text-[#DBCB2A]">+</span>
+            </p>
+            <p>Business advice given over 20 years</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center py-6 px-4 border-b border-[#2E2544] broder-b-2 md:border-b-0 md:border-l"
+          >
+            <p class="max-w-max text-6xl font-semibold pt-6 relative">
+              120 <span class="absolute top-0 text-[#DBCB2A]">+</span>
+            </p>
+            <p>Business advice given over 20 years</p>
+          </div>
+        </div>
+        <div
+          class="lg:flex-1 flex flex-col md:flex-row items-start lg:items-center gap-4 md:gap-8 overflow-hidden"
+        >
+          <div class="md:w-[40%]">
+            <img class="w-full" src="/images/countA.jpg" alt="" />
+          </div>
+          <div class="md:w-[60%] flex flex-col gap-4 md:gap-8">
+            <img
+              class="w-full overflow-hidden"
+              src="/images/Home_banner.jpg"
+              alt=""
+            />
+            <img
+              class="w-full overflow-hidden"
+              src="/images/countC.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- achievement ends -->
+    <!-- contact us -->
+    <div class="bg-slate-100 py-12 lg:py-16 px-4 xl:px-[175px]">
+      <p class="text-4xl md:text-5xl lg:text-6xl font-medium py-6 text-center">
+        Need Support?
+      </p>
+      <div class="flex flex-col md:flex-row gap-12 xl:gap-[175px]">
+        <div class="lg:w-1/3">
+          <img class="w-full" src="/images/contact_image.png" alt="" />
+        </div>
+        <div class="lg:w-2/3 mt-6">
+          <p class="text-[#00072D] text-2xl font-semibold">
+            +(01)123-4566-7899
+          </p>
+          <p class="text-sm md:text-base text-slate-500 pt-6">
+            Mon-Sat: 9 am - 5pm
+          </p>
+          <p class="text-sm md:text-base text-slate-500">example@example.com</p>
+          <p class="text-sm md:text-base text-slate-500">
+            102 sample avenue, NY-1000
+          </p>
+          <div class="mt-6">
+            <form>
+              <div class="lg:flex items-center justify-center gap-12">
+                <input
+                  class="w-full border-b bg-transparent outline-none py-4"
+                  placeholder="Name"
+                  type="text"
+                  id=""
+                  name="name"
+                  required
+                />
+                <input
+                  class="w-full border-b bg-transparent outline-none py-4"
+                  placeholder="Email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="lg:flex items-center justify-center gap-12">
+                <input
+                  class="w-full border-b bg-transparent outline-none py-4"
+                  placeholder="Phone"
+                  type="number"
+                  id="mobile"
+                  name="phone"
+                />
+                <input
+                  class="w-full border-b bg-transparent outline-none py-4"
+                  placeholder="Subject"
+                  type="text"
+                  id="sub"
+                  name="message"
+                />
+              </div>
+
+              <textarea
+                class="border-b min-h-[200px] w-full bg-transparent py-4 outline-none"
+                name="text_area"
+                id="d"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button
+                class="px-4 py-3 mb-4 rounded bg-[#DBCB2A] border-[#DBCB2A] border-2 text-slate-900 font-semibold hover:text-white hover:border-2 hover:border-[#DBCB2A] hover:bg-[#2E2544] transition delay-150 ease-in-out"
+              >
+                Submit Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us ends -->
+    <!-- testimonials starts -->
+    <div class="py-12 px-4 xl:px-[175px]">
+      <p class="text-4xl md:text-5xl lg:text-6xl font-medium pb-12">
+        What's our clients say
+      </p>
+      <div
+        class="relative rounded-full border border-1 px-4 pt-6 pb-4 max-w-[300px]"
+      >
+        <p
+          class="bg-white absolute -top-3 left-1/2 transform -translate-x-1/2 px-1"
+        >
+          Overall ratings
+        </p>
+        <div class="flex items-center justify-center gap-4">
+          <img class="max-h-[44px]" src="/images/logo-google.webp" alt="" />
+          <div>
+            <p
+              class="flex items-center justify-center gap-1 font-semibold text-[#00072A]"
+            >
+              4.9
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="14"
+                  viewBox="0 0 80 14"
+                  fill="none"
+                >
+                  <path
+                    d="M7.22569 0L9.36924 4.5606L14.4514 5.15194L10.694 8.56189L11.6914 13.488L7.22569 11.0348L2.75997 13.488L3.75736 8.56189L0 5.15194L5.08215 4.5606L7.22569 0Z"
+                    fill="#FFC31B"
+                  ></path>
+                  <path
+                    d="M39.9835 0L42.1271 4.5606L47.2092 5.15194L43.4518 8.56189L44.4492 13.488L39.9835 11.0348L35.5178 13.488L36.5152 8.56189L32.7578 5.15194L37.84 4.5606L39.9835 0Z"
+                    fill="#FFC31B"
+                  ></path>
+                  <path
+                    d="M23.6046 0L25.7481 4.5606L30.8303 5.15194L27.0729 8.56189L28.0703 13.488L23.6046 11.0348L19.1389 13.488L20.1363 8.56189L16.3789 5.15194L21.4611 4.5606L23.6046 0Z"
+                    fill="#FFC31B"
+                  ></path>
+                  <path
+                    d="M56.3585 0L58.5021 4.5606L63.5842 5.15194L59.8268 8.56189L60.8242 13.488L56.3585 11.0348L51.8928 13.488L52.8902 8.56189L49.1328 5.15194L54.215 4.5606L56.3585 0Z"
+                    fill="#FFC31B"
+                  ></path>
+                  <path
+                    d="M72.7374 0L74.881 4.5606L79.9631 5.15194L76.2057 8.56189L77.2031 13.488L72.7374 11.0348L68.2717 13.488L69.2691 8.56189L65.5117 5.15194L70.5939 4.5606L72.7374 0Z"
+                    fill="#F3F3F3"
+                  ></path>
+                  <path
+                    d="M72.7374 0L72.7374 5.78056V7.70741L72.7374 11.0348L68.2717 13.488L69.2691 8.56189L65.5117 5.15194L70.5939 4.5606L72.7374 0Z"
+                    fill="#FFC31B"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+            <p>Client Reviews</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row items-start justify-between gap-6 xl:gap-[175px]"
+      >
+        <div class="lg:w-[40%]">
+          <div class="pt-6">
+            <svg
+              class="opacity-5"
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="45"
+              viewBox="0 0 60 45"
+              fill=""
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.3521 45L25.3521 24.6226L19.0295 24.6226C14.2403 24.6226 9.7929 21.5079 9.41369 16.7112C9.27484 14.9555 9.3292 13.2201 9.77866 11.8802C11.2274 6.12 16.2978 5.51887 16.2978 5.51887L16.2978 -2.84959e-06C16.2978 -2.84959e-06 3.77658e-07 2.15995 3.399e-06 19.44L7.86805e-06 45L25.3521 45ZM60 45L60 24.6226L53.6773 24.6226C48.8882 24.6226 44.4408 21.5079 44.0616 16.7112C43.9227 14.9555 43.9771 13.2201 44.4265 11.8802C45.8752 6.12 50.9457 5.51886 50.9457 5.51886L50.9457 -8.90762e-06C50.9457 -8.90762e-06 34.6479 2.15995 34.6479 19.44L34.6479 45L60 45Z"
+                fill=""
+              ></path>
+            </svg>
+            <p class="text-sm pt-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              dolorem sint asper iores quis ratione rerum repudiandae
+              reprehenderit, itaque eos obcaecati, non sed. Mollitia, fuga
+              ullam!
+            </p>
+            <div class="flex items-center justify-start gap-6 mt-6">
+              <p class="text-[#00072A] font-semibold text-xl pipe relative">
+                4.8*
+              </p>
+              <div class="text-[#00072A]">
+                <p class="font-semibold">John Doe</p>
+                <p class="text-sm">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-[60%] bg-[#00072A] flex flex-col md:flex-row items-center justify-between"
+        >
+          <div class="flex-1 text-white p-6">
+            <div class="max-w-max mx-auto">
+              <p class="text-6xl font-semibold">2.5K+</p>
+              <p class="">Successfully colpleted projects</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <img class="w-full" src="/images/Home_banner.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials ends -->
+    <!-- infinite scroll -->
+    <div class="relative flex scroll py-12" style="--t: 10s">
+      <div
+        class="flex items-center justify-end gap-4 nowrap animaion h-[200px]"
+      >
+        <img class="w-full" src="/images/countA.jpg" alt="" />
+        <img class="w-full" src="/images/logo_1.jfif" alt="" />
+        <img class="w-full" src="/images/countA.jpg" alt="" />
+        <img class="w-full" src="/images/logo_1.jfif" alt="" />
+        <img class="w-full" src="/images/countA.jpg" alt="" />
+      </div>
+    </div>
+    <!-- faq starts -->
+    <div class="py-12 px-4 xl:px-[175px] bg-slate-50">
+      <p class="text-4xl md:text-5xl lg:text-6xl font-medium pb-12">
+        Know more about we do
+      </p>
+      <div class="flex flex-col lg:flex-row gap-6">
+        <div class="flex-1">
+          <img src="/images/Home_banner.jpg" alt="" />
+        </div>
+        <div class="flex-1">
+          <div class="bg-slate-100">
+            <div class="flex item-center justify-between gap-6 py-4 open">
+              <p>What is your name?</p>
+              <button class="">+</button>
+            </div>
+            <div class="body overflow-hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                quod?
+              </p>
+            </div>
+          </div>
+          <div class="bg-slate-100">
+            <div class="flex item-center justify-between gap-6 py-4 open">
+              <p>What is your name?</p>
+              <button class="">+</button>
+            </div>
+            <div class="body overflow-hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                quod?
+              </p>
+            </div>
+          </div>
+          <div class="bg-slate-100">
+            <div class="flex item-center justify-between gap-6 py-4 open">
+              <p>What is your name?</p>
+              <button class="">+</button>
+            </div>
+            <div class="body overflow-hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                quod?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // nav scroll animation
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky2", window.scrollY > 0);
+      });
+      // add mobile menu
+      function addMenu() {
+        var mobile_menu = document.querySelector(".show_menu");
+        mobile_menu.classList.remove("hidden");
+      }
+      // remove mobile menu
+      function removeMenu() {
+        var mobile_menu = document.querySelector(".show_menu");
+        mobile_menu.classList.add("hidden");
+      }
+      // faq on/off options
+      const tabs = document.querySelectorAll(".open");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          // Get siblings and remove 'show' class
+          [...this.parentElement.parentElement.children].forEach(
+            (child) =>
+              child !== this.parentElement && child.classList.remove("show")
+          );
+
+          // Toggle 'show' class on the next sibling element
+          this.nextElementSibling.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>
